@@ -9,7 +9,10 @@ public class Conditionals {
 
 	public static void main(String[] args) {
 
-		if (true || bloop()) {
+		int j = 4;
+		boolean isEqual = j % 2 == 0;
+
+		if (!isEqual) {
 			System.out.println("hello");
 		}
 
@@ -21,7 +24,7 @@ public class Conditionals {
 			System.out.println("Odd");
 		}
 
-		int day = Integer.MIN_VALUE;
+		int day = 5;
 
 		switch (day) { // Valid with Strings, numbers and Enums
 		case 1:
@@ -50,6 +53,13 @@ public class Conditionals {
 		}
 
 		System.out.println(day);
+
+		System.out.println("is this a string" instanceof String);
+
+		System.out.println("XOR:");
+		System.out.println(true ^ false);
+		System.out.println(false ^ false);
+		System.out.println(true ^ true);
 	}
 
 }
