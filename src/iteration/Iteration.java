@@ -9,6 +9,12 @@ public class Iteration {
 			System.out.println(iteration);
 		}
 
+		for (int i = 1; i <= 10; i++) {
+			for (int j = 0; j < i; j++) {
+				System.out.println(i);
+			}
+		}
+
 		for (int iteration = 10; iteration >= 1; iteration--) {
 			System.out.println(iteration);
 		}
@@ -34,10 +40,11 @@ public class Iteration {
 				if (iteration % 2 == 0) {
 					continue;
 				} else if (iteration == 5) {
-					return;
+					break;
 				}
 				System.out.println(iteration);
 			}
+			System.out.println("test");
 			break;
 		}
 	}
