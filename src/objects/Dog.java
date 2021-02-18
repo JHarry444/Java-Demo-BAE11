@@ -3,13 +3,13 @@ package objects;
 public class Dog {
 
 	// instance variables
-	public int age;
+	private int age;
 
-	public String name;
+	private String name;
 
-	public String colour;
+	private String colour;
 
-	public String breed;
+	private String breed;
 
 	// constructor - makes objects (dogs in this case)
 	public Dog(int age, String name, String colour, String breed) {
@@ -24,6 +24,47 @@ public class Dog {
 	// methods
 	public String bark() {
 		return "Woof Woof!";
+	}
+
+	public void setAge(int age) {
+		if (age >= 0 && age < 20) {
+			this.age = age;
+		} else {
+			System.out.println("Invalid age");
+		}
+	}
+
+	public int getAge() {
+		return this.age;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getColour() {
+		return colour;
+	}
+
+	public void setColour(String colour) {
+		this.colour = colour;
+	}
+
+	public String getBreed() {
+		return breed;
+	}
+
+	public void setBreed(String breed) {
+		this.breed = breed;
+	}
+
+	public void print() {
+		System.out.println("Hi! I'm " + this.name + ", i'm a " + this.colour + " " + this.breed + " and i'm " + this.age
+				+ " years old! " + this.bark());
 	}
 
 }
