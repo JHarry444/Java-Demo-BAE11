@@ -1,6 +1,6 @@
 package objects;
 
-public class Demo {
+public class Demo extends Object {
 
 	// default constructor
 	public Demo() {
