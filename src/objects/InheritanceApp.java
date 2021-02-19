@@ -36,9 +36,11 @@ public class InheritanceApp {
 			System.out.println(mammal.makeNoise());
 		}
 
-		Mammal m1 = new Mammal();
-		m1.setAge(99);
-		Mammal m2 = new Mammal(27, "Barry", "White", "Geordie");
+//		Mammal m1 = new Mammal();
+//		m1.setAge(99);
+//		Mammal m2 = new Mammal(27, "Barry", "White", "Geordie");
+//		CAN'T INSTANTIATE ABSTRACT CLASSES
+//		m1.setAge(Integer.MAX_VALUE);
 
 	}
 }

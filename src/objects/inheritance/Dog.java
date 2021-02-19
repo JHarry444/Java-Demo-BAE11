@@ -14,6 +14,13 @@ public class Dog extends Mammal {
 		return "Woof Woof!";
 	}
 
+	@Override
+	public void setAge(int age) {
+		if (age > 0 && age < 20) {
+			super.setAge(age);
+		}
+	}
+
 	public void fetch() {
 		System.out.println("drop it, drop it! DROP IT!");
 	}

@@ -1,6 +1,6 @@
 package objects.inheritance;
 
-public class Mammal {
+public abstract class Mammal {
 
 	private int age;
 
@@ -15,22 +15,24 @@ public class Mammal {
 	}
 
 	public Mammal(int age, String name, String colour, String breed) {
-		this.age = age;
+		if (age > 0 && age < 100) {
+			this.age = age;
+		}
 		this.name = name;
 		this.colour = colour;
 		this.breed = breed;
 	}
 
-	public String makeNoise() {
-		return "Bonjour";
-	}
+	public abstract String makeNoise();
 
 	public int getAge() {
 		return age;
 	}
 
 	public void setAge(int age) {
-		this.age = age;
+		if (age > 0 && age < 100) {
+			this.age = age;
+		}
 	}
 
 	public String getName() {
