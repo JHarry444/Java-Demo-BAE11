@@ -1,4 +1,4 @@
-package objects.inheritance;
+package interfaces;
 
 public abstract class FlyingBird extends Bird implements Flyable {
 

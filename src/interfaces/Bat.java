@@ -1,4 +1,6 @@
-package objects.inheritance;
+package interfaces;
+
+import objects.inheritance.Mammal;
 
 public class Bat extends Mammal implements Flyable {
 

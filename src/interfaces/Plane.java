@@ -1,4 +1,4 @@
-package objects.inheritance;
+package interfaces;
 
 public class Plane implements Flyable {
 

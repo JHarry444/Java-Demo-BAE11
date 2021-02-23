@@ -1,12 +1,7 @@
-package objects;
+package interfaces;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import objects.inheritance.Bat;
-import objects.inheritance.Flyable;
-import objects.inheritance.Plane;
-import objects.inheritance.Robin;
 
 public class InterfaceApp {
 
