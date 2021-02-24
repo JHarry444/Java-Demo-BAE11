@@ -18,6 +18,15 @@ public class InterfaceApp {
 			f.fly();
 //			f.makeNoise();
 		}
+
+		Flyable fly = new Flyable() {
+			@Override
+			public void fly() {
+				System.out.println("This is God's mistake");
+			}
+		};
+
+		fly.fly();
 	}
 
 }

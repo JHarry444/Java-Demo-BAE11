@@ -10,7 +10,7 @@ public class Modifiers extends Demo {
 
 	public static void main(String[] args) {
 		Demo demo = new Demo();
-		demo.number = 27;
+//		demo.number = 27;
 
 	}
 
